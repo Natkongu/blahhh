@@ -1,18 +1,9 @@
-/* Wrapper to allow scrolling */
-#wrapper {
-    position: relative;
-    display:flex;
-    height: 200vh; /* Ensures enough scroll space */
-}
+#wrapper { position: relative; }
 
-/* Sticky aside */
+/* Aside in non-scroll mode */
 aside {
-    position: sticky;
-    top: 0;
-    background: white; /* Optional: Keeps it visible */
-    margin-top: 5px;
-    padding: 15px 0 15px 8px;
-    width: 267px;
-    z-index: 1000; /* Keeps it above other content */
-    border: 1px solid black; /* Just for visibility */
+ float: left; /* Keeps the aside to the left and on top */
+ margin-top: 5px;
+ padding: 15px 0 15px 8px;
+ width: 267px;
 }
