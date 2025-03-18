@@ -13,7 +13,7 @@ body, html {
 aside {
     float: left; /* Keeps the aside to the left and on top */
     margin-top: 5px;
-    padding: 15px 0 15px 8px;
+    padding: 10px;
     width: 50%;
     position: sticky; /* Makes the aside sticky */
     top: 0; /* Keeps it at the top when scrolling */
