@@ -1,78 +1,44 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sticky Aside</title>
-    
-    <!-- jQuery (Make sure to include this for your JS to work) -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    
-    <style>
-        /* Wrapper to position elements */
-        #wrapper {
-            position: relative;
-            display: flex;
-            gap: 20px;
-        }
+<style>
+  aside {
+    position: sticky;
+    top: 0;
+    background: white;
+    padding: 10px;
+    z-index: 1000;
+    border: 2px solid black;
+  }
 
-        /* Aside styles */
-        aside {
-            float: left; /* Keeps the aside to the left */
-            margin-top: 5px;
-            padding: 15px 0 15px 8px;
-            width: 267px;
-            background: lightblue; /* Just for visibility */
-        }
+  #wrapper {
+    display: flex;
+    gap: 20px;
+  }
 
-        /* Main content styles */
-        .content {
-            width: 70%;
-            background: lightgray;
-            padding: 20px;
-            height: 200vh; /* Makes page scrollable */
-        }
-    </style>
-</head>
-<body>
+  .content {
+    height: 200vh; /* Makes the page scrollable */
+    width: 70%;
+    background: lightgray;
+    padding: 20px;
+  }
+</style>
 
-    <div id="wrapper">
-        <aside>
-            <p><strong>Sticky Sidebar</strong></p>
-            <p>This should stay at the top when you scroll!</p>
-        </aside>
+<div id="wrapper">
+  <aside>
+    <p><strong>Sticky Sidebar</strong></p>
+    <p>This stays at the top when you scroll!</p>
+  </aside>
 
-        <div class="content">
-            <h2>Main Content</h2>
-            <p>Scroll down to test the sticky effect.</p>
-            <p>More text...</p>
-            <p>More text...</p>
-            <p>More text...</p>
-            <p>More text...</p>
-            <p>Keep scrolling...</p>
-            <p>More text...</p>
-            <p>More text...</p>
-            <p>More text...</p>
-            <p>Almost there...</p>
-            <p>Did it stay in place? ✅</p>
-        </div>
-    </div>
-
-    <script>
-        var asideTop = $('aside').offset().top - parseFloat($('aside').css('marginTop').replace(/auto/, 0));
-
-        $(window).scroll(function () {
-            var asideY = $(this).scrollTop();
-            if (asideY >= asideTop) {
-                $('aside').css({
-                    position: 'fixed',
-                    top: '0px'
-                });
-            } else {
-                $('aside').removeAttr('style');
-            }
-        });
-    </script>
-
-</body>
-</html>
+  <div class="content">
+    <h2>Main Content</h2>
+    <p>Scroll down to test the sticky effect.</p>
+    <p>More text...</p>
+    <p>More text...</p>
+    <p>More text...</p>
+    <p>More text...</p>
+    <p>Keep scrolling...</p>
+    <p>More text...</p>
+    <p>More text...</p>
+    <p>More text...</p>
+    <p>Almost there...</p>
+    <p>Did it stay in place? ✅</p>
+  </div>
+</div>
