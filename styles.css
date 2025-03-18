@@ -11,16 +11,15 @@ body, html {
 
 /* Aside in non-scroll mode */
 aside {
-    float: left; /* Keeps the aside to the left and on top */
-    overflow-y: auto;
-    margin-top: 5px;
-    padding: 10px;
     width: 50%;
-    position: sticky; /* Makes the aside sticky */
-    top: 0; /* Keeps it at the top when scrolling */
-    background-color: #f8f9fa; /* Optional: Adds a background color */
-    border: 1px solid #ddd; /* Optional: Adds a border */
+    position: sticky;
+    top: 0;
+    background-color: #f8f9fa;
+    padding: 10px;
+    border: 1px solid #ddd;
     box-sizing: border-box;
+    height: 100vh; /* Ensure it takes the full viewport height */
+    overflow-y: auto; /* Allow scrolling within the aside if needed */
 }
 
 main {
