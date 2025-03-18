@@ -19,12 +19,6 @@ aside {
     max-height: 80vh;
     border: 1px solid #ddd;
     box-sizing: border-box;
-    height: 100vh; /* Ensure it takes the full viewport height */
-    overflow-y: auto; /* Allow scrolling within the aside if needed */
-}
-
-aside::-webkit-scrollbar {
-    display: none; /* For Chrome, Safari, and Opera */
 }
 
 
