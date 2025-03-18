@@ -5,13 +5,13 @@ body, html {
 }
 #wrapper {
     position: relative;
-    display: flex;
     width: 100%;
 }
 
 /* Aside in non-scroll mode */
 aside {
     width: 50%;
+    float: left;
     position: sticky;
     top: 0;
     background-color: #f8f9fa;
@@ -23,5 +23,6 @@ aside {
 
 main {
     width: 50%;
+    float: right;
     padding: 10px;
 }
