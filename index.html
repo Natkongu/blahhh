@@ -1,44 +1,23 @@
-<style>
-  aside {
-    position: sticky;
-    top: 0;
-    background: white;
-    padding: 10px;
-    z-index: 1000;
-    border: 2px solid black;
-  }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Aside Example</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
-  #wrapper {
-    display: flex;
-    gap: 20px;
-  }
+    <div id="wrapper">
+        <aside>
+            <p>Content to keep on the side and at the top when scrolled.</p>
+        </aside>
+        <main>
+            <p>Scroll down to see the sticky effect.</p>
+            <div style="height: 150vh; background: lightgray;"></div>
+        </main>
+    </div>
 
-  .content {
-    height: 200vh; /* Makes the page scrollable */
-    width: 70%;
-    background: lightgray;
-    padding: 20px;
-  }
-</style>
-
-<div id="wrapper">
-  <aside>
-    <p><strong>Sticky Sidebar</strong></p>
-    <p>This stays at the top when you scroll!</p>
-  </aside>
-
-  <div class="content">
-    <h2>Main Content</h2>
-    <p>Scroll down to test the sticky effect.</p>
-    <p>More text...</p>
-    <p>More text...</p>
-    <p>More text...</p>
-    <p>More text...</p>
-    <p>Keep scrolling...</p>
-    <p>More text...</p>
-    <p>More text...</p>
-    <p>More text...</p>
-    <p>Almost there...</p>
-    <p>Did it stay in place? ✅</p>
-  </div>
-</div>
+    <script src="script.js"></script>
+</body>
+</html>
