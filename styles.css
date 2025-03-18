@@ -12,6 +12,7 @@ body, html {
 /* Aside in non-scroll mode */
 aside {
     float: left; /* Keeps the aside to the left and on top */
+    overflow-y: auto;
     margin-top: 5px;
     padding: 10px;
     width: 50%;
