@@ -1,0 +1,16 @@
+/* Wrapper to allow scrolling */
+#wrapper {
+    position: relative;
+    height: 200vh; /* Ensures enough scroll space */
+}
+
+/* Sticky aside */
+aside {
+    position: sticky;
+    top: 0;
+    background: white; /* Optional: Keeps it visible */
+    padding: 15px;
+    width: 267px;
+    z-index: 1000; /* Keeps it above other content */
+    border: 1px solid black; /* Just for visibility */
+}
